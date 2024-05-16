@@ -1,0 +1,1 @@
+I designed this project while studying in college, but I benefited from it very much because I dealt with a new programming language, which is Java, and I studied OOP in great depth in this course. I also designed it using the UML digram and dealt with a GUI specific to Java, which is JavaFX.
