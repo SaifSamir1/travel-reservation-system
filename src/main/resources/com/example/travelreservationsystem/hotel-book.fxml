@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.travelreservationsystem.HotelBook">
+   <children>
+      <Label layoutX="14.0" layoutY="20.0" text="Booking the hotel" textFill="#b72727">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="21.0" layoutY="77.0" prefHeight="422.0" prefWidth="698.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="exp" text="Expensive Hotel ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="698.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="20.0" prefHeight="30.0" prefWidth="239.0" text="choose the type of the room" textFill="#a61b1b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="expSingle" layoutX="52.0" layoutY="69.0" mnemonicParsing="false" onAction="#checkTheTypeOfRooms" prefHeight="18.0" prefWidth="73.0" text="Single">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="expDouble" layoutX="208.0" layoutY="69.0" mnemonicParsing="false" onAction="#checkTheTypeOfRooms" text="Double">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="expFamily" layoutX="380.0" layoutY="70.0" mnemonicParsing="false" onAction="#checkTheTypeOfRooms" text="Family">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <Label layoutX="14.0" layoutY="126.0" text="Hotel Name" textFill="#a64545">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="380.0" layoutY="126.0" text="Room number" textFill="#b92727">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="expPriceBtn" layoutX="195.0" layoutY="311.0" mnemonicParsing="false" onAction="#expPrice" prefHeight="40.0" prefWidth="153.0" text="Price Per Night" textFill="#963232">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="expAvBtn" layoutX="362.0" layoutY="311.0" mnemonicParsing="false" onAction="#expAvBtn1" prefHeight="40.0" prefWidth="161.0" text="Avaliable or Not">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="expBookBtn" layoutX="537.0" layoutY="311.0" mnemonicParsing="false" onAction="#book" prefHeight="26.0" prefWidth="138.0" text="Book " textFill="#a63636">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="expText" alignment="CENTER" layoutX="89.0" layoutY="240.0" prefHeight="35.0" prefWidth="463.0" textFill="#943b3b">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="expensiveHotelNames" layoutX="129.0" layoutY="127.0" prefHeight="26.0" prefWidth="190.0" />
+                        <ChoiceBox fx:id="expensiveNumberOfRooms" layoutX="511.0" layoutY="127.0" prefHeight="26.0" prefWidth="105.0" />
+                        <Label layoutX="499.0" prefHeight="39.0" prefWidth="198.0" text="Expensive Hotel " textFill="#2c54ab">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="190.0" text="number of days" textFill="#a64545">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="expNumberOfDays" layoutX="150.0" layoutY="191.0" prefHeight="26.0" prefWidth="94.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="cheap" text="Cheap Hotel ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="22.0" prefHeight="30.0" prefWidth="239.0" text="choose the type of the room" textFill="#a61b1b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="chpSignal" layoutX="60.0" layoutY="70.0" mnemonicParsing="false" onAction="#checkTheTypeOfRooms" prefHeight="18.0" prefWidth="73.0" text="Single">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="chpDouble" layoutX="253.0" layoutY="70.0" mnemonicParsing="false" onAction="#checkTheTypeOfRooms" text="Double">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="chpFamily" layoutX="432.0" layoutY="70.0" mnemonicParsing="false" onAction="#checkTheTypeOfRooms" text="Family">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <Label layoutX="14.0" layoutY="124.0" text="Hotel Name" textFill="#a64545">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="365.0" layoutY="123.0" text="Room number" textFill="#b92727">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="chpPriceBtn" layoutX="195.0" layoutY="314.0" mnemonicParsing="false" onAction="#chpPrice" prefHeight="40.0" prefWidth="153.0" text="Price Per Night" textFill="#963232">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="chpAvBtn" layoutX="365.0" layoutY="314.0" mnemonicParsing="false" onAction="#chpAvBtn1" prefHeight="40.0" prefWidth="161.0" text="Avaliable or Not">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="chpBookBtn" layoutX="545.0" layoutY="314.0" mnemonicParsing="false" onAction="#book" prefHeight="26.0" prefWidth="138.0" text="Book " textFill="#a63636">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="chpText" alignment="CENTER" layoutX="97.0" layoutY="239.0" prefHeight="35.0" prefWidth="490.0" textFill="#943b3b">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="chpHotelName" layoutX="134.0" layoutY="125.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="chpNumberOfRooms" layoutX="498.0" layoutY="124.0" prefHeight="26.0" prefWidth="110.0" />
+                        <Label layoutX="535.0" layoutY="2.0" prefHeight="39.0" prefWidth="158.0" text="Cheap Hotel " textFill="#2c54ab">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="181.0" text="number of days" textFill="#a64545">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="chpNumberOfDays" layoutX="162.0" layoutY="183.0" prefHeight="26.0" prefWidth="94.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
